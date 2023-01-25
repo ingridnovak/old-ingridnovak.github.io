@@ -1,0 +1,60 @@
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 365px;
+    padding-top: 129px;
+    padding-bottom: 243px;
+
+}
+.button_one, .button_two, .button_three{
+    width: 169px;
+    height: 63px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 32px;
+    box-shadow: 0px -5px #FFFFFF;
+}
+.button_one,.button_four{
+    background: #18CFAB;
+
+}
+.button_two{
+    background: #00CBF6;
+}
+.button_one:hover,.button_four:hover {
+    background-color: #47986a
+}
+.button_two:hover {background-color: #397885
+}
+
+.button_one:active,.button_two:active, .button_three:active, .button_four:active {
+    box-shadow: 0px 0px #FFFFFF;
+    transform: translateY(4px);
+}
+.button_three{
+    background:  #18CFAB;
+}
+.button_three:hover {
+    background-color: #47986a;
+}
+.purchase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 476px;
+    justify-content: space-evenly;
+}
+.button_purchase{
+    padding-bottom: 115px;
+}
+
+.load_more_btn{
+    padding-top: 71px;
+    padding-bottom: 99px;
+}

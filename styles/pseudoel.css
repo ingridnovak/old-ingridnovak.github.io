@@ -1,0 +1,102 @@
+.header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(94, 93, 88, 0.6);
+    z-index: 2;
+    height: 120px;
+}
+
+.home:hover::after, .about:hover::after, .blog:hover::after, .skills:hover::after, .service:hover::after, .work:hover::after, .testimonial:hover::after {
+
+    z-index: 3;
+    top: 46px;
+    content: '';
+    position: relative;
+    outline: 2px solid #18CFAB;
+    display: block;
+    margin: auto;
+    background: transparent;
+
+}
+.card_psevdo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 201px;
+}
+.card_psevdo::before{
+    position: relative;
+}
+
+.card_psevdo.finger::before {
+    content: url("../imgP/finger.svg");
+}
+.card_psevdo.diamond::before{
+    content: url("../imgP/diamond.svg");
+}
+.card_psevdo.lamp::before{
+    content: url("../imgP/lamp.svg");
+}
+.card_psevdo.computer::before{
+    content: url("../imgP/computer.svg");
+}
+.title::after{
+    content: url("../imgP/Shape.svg");
+    position: relative;
+    display: block;
+    height: 0px;
+    bottom: 2px;
+}
+.pseudoelement{
+    display: flex;
+    justify-content: center;
+}
+
+.pseudoelement::after{
+    content: url("../imgP/Shape.svg");
+    position: relative;
+    right: 11px;
+    height: 0px;
+    top: 13px;
+}
+.pseudo.active::after {
+    content: url("../imgP/Rectangle.svg");
+    position: relative;
+    display: block;
+    height: 0px;
+    bottom: 4px;
+    left: 83px;
+}
+.icons_block::before{
+    content: url("../imgP/icon.svg");
+    position: relative;
+    bottom: 24px;
+}
+
+.text_block::before{
+    content: url("../imgP/lineTwo.svg");
+    position: relative;
+    bottom: 62.4px;
+}
+.button_four::before{
+    content: url("../imgP/plus.svg");
+    position: relative;
+    top: 2px;
+
+}
+.date::before{
+    content: url("../imgP/date.svg");
+}
+.news:hover .date::before{
+    content: url("../imgP/dateHover.svg");
+}
+.people-text::before{
+    content: url("../imgP/Combined shape 2474.svg");
+    bottom: 36px;
+    position: relative;
+}
